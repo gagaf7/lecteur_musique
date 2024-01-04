@@ -1,0 +1,406 @@
+h1 {
+    color : lightblue
+}
+body{
+    cursor: url("curseur/curseurs-de-souris-waeon-sf/01\ Normal\ select.cur"), default;   
+}
+
+font{
+    color : rgb(80, 80, 210)
+}
+
+.lien{ 
+    color : white;
+    cursor: url("curseur/curseurs-de-souris-waeon-sf/15\ Link\ select.cur"), default; 
+    font-family: 'future', Arial, Helvetica;  
+     
+}
+
+p{
+    color: white;
+    margin: 50px;
+    cursor: url("curseur/curseurs-de-souris-waeon-sf/01\ Normal\ select.cur"), default;  
+    font-family: 'cyber', Arial, Helvetica;  
+}
+
+h1{
+    font-family:'future', Helvetica, sans-serif;
+    color: white;
+}
+h2{
+    color: white;
+}
+ul{
+    color: white;
+}
+body{
+    display: flex;
+    background : black ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.demo-border{
+    position:fixed;
+    display:flex;
+    border-width: 2px ;
+    border-color:white;
+    border-style: solid;
+    box-shadow: 6px 6px 35px  blue;
+    padding: 1%;
+    background-image: url("800px-autopx-scale-to-width-down-5dee9.jpg");
+    background-position: center;
+    background-size: cover;
+    bottom:90%;
+}
+.easter-border{
+    border-width: 2px ;
+    border-color:white;
+    border-style: solid;
+    box-shadow: 6px 6px 35px  blue;
+    padding: 3%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img:hover{
+    opacity: 1;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+a:active{
+    text-decoration-color: blue;
+}
+
+/*
+a:focus{
+    background-color : blue;
+}
+*/
+.banner{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60px;
+}
+
+.conteneur {
+    display : flex;
+    flex-direction: row;
+    justify-content : space-around; 
+}
+
+.title-border{
+    position:fixed;
+    display:flex;
+    border-width: 2px ;
+    border-color:white;
+    border-style: solid;
+    box-shadow: 6px 6px 35px  blue;
+    padding: 10px;
+    background-image: url("800px-autopx-scale-to-width-down-5dee9.jpg");
+    background-position: 0px 500px;
+    background-size: cover;
+    text-align: center;
+    bottom:0.25rem;
+}
+.nav-border{
+    border-width: 2px ;
+    border-color:white;
+    border-style: solid;
+    padding: 5px;
+    background-color: black;
+    text-align: center;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.conteneur2 {
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 20px
+}
+.border{
+    border-width: 2px ;
+    border-color:white;
+    border-style: solid;
+    box-shadow: 6px 6px 35px  blue;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+}
+
+@font-face {
+	font-family:"spider-man";
+	src: url("police_ecriture_woff/The Amazing Spider-Man.woff2") format("woff2"),
+		url("police_ecriture_woff/the-amazing-spider-man.woff") format("woff");
+}
+@font-face {
+	font-family:"future";
+	src: url("police_ecriture_woff/sujun/Sujun-Oblique.woff") format("woff"),
+        url("police_ecriture_woff/sujun/Sujun-Oblique.woff2") format("woff2");
+}
+@font-face {
+	font-family:"Cyber";
+	src: url("police_ecriture_woff/cyber_freight/CYBERFREIGHT-Normal.woff") format("woff"),
+        url("police_ecriture_woff/cyber_freight/CYBERFREIGHT-Normal.woff2") format("woff2");
+}
+video{
+    height: 20%;
+    width: 30%;
+}
+
+
+table{
+    border-collapse: collapse ;
+}
+form{
+    display: flex;
+}
+input{
+    padding:1px;
+    border-width: 2px ;
+    border-color:white;
+    border-style: solid;
+    box-shadow: 6px 6px 35px  blue;
+}
+body::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: black; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: blue; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid black; /* creates padding around scroll thumb */
+  }
+  .curseurtext{
+
+    cursor: url("curseur/curseurs-de-souris-waeon-sf/06\ Text\ select.cur"), default; 
+  }
+  .barre-son{
+    color: white;
+    cursor: url("curseur/curseurs-de-souris-waeon-sf/01\ Normal\ select.cur"), default;  
+    font-family: 'cyber', Arial, Helvetica;
+    display:flex;
+    position:fixed;
+    left :20em;
+    top:75%;
+
+  }
+
+  .barre-audio{
+    color: white;
+    cursor: url("curseur/curseurs-de-souris-waeon-sf/01\ Normal\ select.cur"), default;  
+    font-family: 'cyber', Arial, Helvetica;
+    display:flex;
+    position:fixed;
+    left :2%;
+    top:75%;
+
+  }
+  .bouton{
+    color: white;
+    cursor: url("curseur/curseurs-de-souris-waeon-sf/01\ Normal\ select.cur"), default;  
+    font-family: 'cyber', Arial, Helvetica;
+    display:flex;
+    position:fixed;
+    left :2%;
+    top:80%;
+  
+  }
+  .boutoncontrolright{
+    color: white;
+    cursor: url("curseur/curseurs-de-souris-waeon-sf/01\ Normal\ select.cur"), default;  
+    font-family: 'cyber', Arial, Helvetica;
+    display: flex;
+    position:fixed;
+    left: 55%;
+    top:13%;
+ 
+  }
+  .boutoncontrolleft{
+    color: white;
+    cursor: url("curseur/curseurs-de-souris-waeon-sf/01\ Normal\ select.cur"), default;  
+    font-family: 'cyber', Arial, Helvetica;
+    display: flex;
+    position:fixed;
+    left: 43%;
+    top:13%;
+  }
+.imagePosition{
+    display:flex;
+    position:fixed;
+    left :2%;
+    top:10em;
+}
+
+:required{
+    border-width: 2px ;
+    border-color:white;
+    border-style: solid;
+    box-shadow: 6px 6px 35px  blue;
+    padding: 10px;
+    background-color: black;
+    background-position: 0px 500px;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: 'future', Arial, Helvetica;  
+}
+@media screen and (max-width: 900px) {
+    .conteneur{
+        flex-direction: column;
+    }
+    .demo-border{
+        
+            width: auto;
+            height: 120px;
+            text-align: justify;
+            overflow: auto;
+        
+    }
+}
+
+#pause-buttom , #stop-buttom {
+    display:none;
+}
+
+:root{
+    --clr-neon: hsl(240, 99%, 33%);
+}
+  
+.neon-buttom1{
+    font-size : 2rem;
+    color: var(--clr-neon);
+    font-family: 'future', Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    border: var(--clr-neon) 0.1em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+    text-shadow:
+        0 0 0.125em hsl(0, 0%, 10%), 
+        0 0 0.45em currentColor;
+
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon),0 0 0.5em 0 var(--clr-neon);
+    position: relative;  
+    transition: background-color 100ms linear;
+    position:fixed;
+    display:flex;
+    bottom:80%;
+}
+
+.neon-buttom1::after{
+    content: "";
+    position:absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity:0;
+    transition: opacity 100ms linear;
+}
+
+.neon-buttom::before{
+    pointer-events: none;
+    content: "";
+    position:absolute;
+    background: currentColor;
+    top: 140%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(4em) rotateX(70deg) ;
+    filter:blur(1em);
+}
+
+.neon-buttom:hover, .neon-buttom:focus{
+    background: var(--clr-neon);
+    color: black;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.neon-buttom:hover::before{
+    opacity:1;
+}
+.neon-buttom:hover::after{
+    opacity: 1;
+}
+.neon-buttom2{
+    font-size : 2rem;
+    color: var(--clr-neon);
+    font-family: 'future', Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    border: var(--clr-neon) 0.1em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+    text-shadow:
+        0 0 0.125em hsl(0, 0%, 10%), 
+        0 0 0.45em currentColor;
+
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon),0 0 0.5em 0 var(--clr-neon);
+    position: relative;  
+    transition: background-color 100ms linear;
+    position:fixed;
+    display:flex;
+    bottom:90%;
+}
+
+.neon-buttom2::after{
+    content: "";
+    position:absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity:0;
+    transition: opacity 100ms linear;
+}
+
+.neon-buttom::before{
+    pointer-events: none;
+    content: "";
+    position:absolute;
+    background: currentColor;
+    top: 140%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(4em) rotateX(70deg) ;
+    filter:blur(1em);
+}
+
+.neon-buttom:hover, .neon-buttom:focus{
+    background: var(--clr-neon);
+    color: black;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.neon-buttom:hover::before{
+    opacity:1;
+}
+.neon-buttom:hover::after{
+    opacity: 1;
+}
