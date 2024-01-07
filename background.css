@@ -2,8 +2,8 @@
 
 .box{
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 12.5em;
+    height: 12.5em;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
     animation: rotate 5s linear infinite;
@@ -26,7 +26,6 @@
 
 }
 
-
 .box div span{
     position:absolute;
     top:0;
@@ -35,7 +34,7 @@
     transform-style: preserve-3d;
     background : linear-gradient(black,blue);
     opacity: 0.8;
-    transform: rotateY(calc(90deg * var(--n))) translateZ(150px);
+    transform: rotateY(calc(90deg * var(--n))) translateZ(6.25em);
     border: 1px solid blue;
 }
 .top{
@@ -45,17 +44,26 @@
     width: 300px;
     height: 300px;
     background: blue;
-    transform: rotateX(90deg) translateZ(150px);
+    transform: rotateX(90deg) translateZ(6.25em);
+}
+.bottum{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: blue;
+    transform: rotateX(90deg) translateZ(-6.25em);
 }
 .top::before{
     content:"";
     position:absolute;
     top:3;
     left: 0;
-    width: 300px;
-    height:300px;
+    width: 12.5em;
+    height:12.5em;
     background: blue;
-    transform: translateZ(-500px);
-    filter:blur(30px);
-    box-shadow: 0 0 120px rgb(0, 0, 255,0.2), 0 0 200px rgb(0, 0, 255,0.4) , 0 0 300px rgb(0, 0, 255,0.6) , 0 0 400px rgb(0, 0, 255,0.8) , 0 0 500px rgb(0, 0, 255,1);
+    transform: translateZ(-21.875em);
+    filter:blur(1.875em);
+    box-shadow: 0 0 7.5em rgb(0, 0, 255,0.2), 0 0 12.5em rgb(0, 0, 255,0.4) , 0 0 18.75em rgb(0, 0, 255,0.6) , 0 0 25em rgb(0, 0, 255,0.8) , 0 0 31.25em rgb(0, 0, 255,1);
 }
