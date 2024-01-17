@@ -1,4 +1,6 @@
-
+:root{
+    --clr-neon : blue;
+}
 
 .box{
     position: absolute;
@@ -32,10 +34,10 @@
     height: 100%;
     width: 100%;
     transform-style: preserve-3d;
-    background : linear-gradient(black,blue);
+    background : linear-gradient(black,var(--clr-neon));
     opacity: 0.8;
     transform: rotateY(calc(90deg * var(--n))) translateZ(6.25em);
-    border: 1px solid blue;
+    border: 1px solid var(--clr-neon);
 }
 .top{
     position: absolute;
@@ -43,7 +45,7 @@
     left: 0;
     width: 300px;
     height: 300px;
-    background: blue;
+    background: var(--clr-neon);
     transform: rotateX(90deg) translateZ(6.25em);
 }
 .bottum{
@@ -52,7 +54,7 @@
     left: 0;
     width: 300px;
     height: 300px;
-    background: blue;
+    background: var(--clr-neon);
     transform: rotateX(90deg) translateZ(-6.25em);
 }
 .top::before{
@@ -62,10 +64,10 @@
     left: 0;
     width: 12.5em;
     height:12.5em;
-    background: blue;
+    background: var(--clr-neon);
     transform: translateZ(-21.875em);
     filter:blur(1.875em);
-    box-shadow: 0 0 7.5em rgb(0, 0, 255,0.2), 0 0 12.5em rgb(0, 0, 255,0.4) , 0 0 18.75em rgb(0, 0, 255,0.6) , 0 0 25em rgb(0, 0, 255,0.8) , 0 0 31.25em rgb(0, 0, 255,1);
+    box-shadow: 0 0 7.5em rgb(var(--clr-neon),0.2), 0 0 12.5em rgb(0, 0, 255,0.4) , 0 0 18.75em rgb(0, 0, 255,0.6) , 0 0 25em rgb(var(--clr-neon),0.8) , 0 0 31.25em rgb(0, 0, 255,1);
 }
 .boxPosition{
     left : 0px;
