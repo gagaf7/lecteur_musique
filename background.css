@@ -6,7 +6,7 @@
     height: 12.5em;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
-    animation: rotate 5s linear infinite;
+    animation: rotate 4s linear infinite;
     z-index: -1;
     position:fixed;
 }
@@ -66,4 +66,7 @@
     transform: translateZ(-21.875em);
     filter:blur(1.875em);
     box-shadow: 0 0 7.5em rgb(0, 0, 255,0.2), 0 0 12.5em rgb(0, 0, 255,0.4) , 0 0 18.75em rgb(0, 0, 255,0.6) , 0 0 25em rgb(0, 0, 255,0.8) , 0 0 31.25em rgb(0, 0, 255,1);
+}
+.boxPosition{
+    left : 0px;
 }

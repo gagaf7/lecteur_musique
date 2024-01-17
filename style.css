@@ -153,8 +153,8 @@ a:focus{
         url("police_ecriture_woff/cyber_freight/CYBERFREIGHT-Normal.woff2") format("woff2");
 }
 video{
-    height: 20%;
-    width: 30%;
+    height: 45%;
+    width: 65%;
 }
 
 
@@ -225,8 +225,8 @@ body::-webkit-scrollbar {
     font-family: 'cyber', Arial, Helvetica;
     display: flex;
     position:fixed;
-    left: 55%;
-    top:13%;
+    left: 57%;
+    top:19%;
  
   }
   .boutoncontrolleft{
@@ -235,8 +235,8 @@ body::-webkit-scrollbar {
     font-family: 'cyber', Arial, Helvetica;
     display: flex;
     position:fixed;
-    left: 43%;
-    top:13%;
+    left: 41%;
+    top:19%;
   }
 .imagePosition{
     display:flex;
@@ -277,7 +277,7 @@ body::-webkit-scrollbar {
 }
 
 :root{
-    --clr-neon: hsl(240, 99%, 33%);
+    --clr-neon: hsl(240, 98%, 24%);
 }
   
 .neon-buttom1{
@@ -299,7 +299,7 @@ body::-webkit-scrollbar {
     transition: background-color 100ms linear;
     position:fixed;
     display:flex;
-    bottom:80%;
+    bottom:70%;
 }
 
 .neon-buttom1::after{
@@ -361,7 +361,7 @@ body::-webkit-scrollbar {
     transition: background-color 100ms linear;
     position:fixed;
     display:flex;
-    bottom:90%;
+    bottom:83%;
 }
 
 .neon-buttom2::after{
