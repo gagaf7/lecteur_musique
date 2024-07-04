@@ -1,94 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
-    
-    <head>
-        <meta charset="utf-8">
-        <title>Lecteur audio</title>
-        <link href="style.css" rel="stylesheet">
-        <link href="background.css" rel="stylesheet">
-        <script src="script.js" defer></script>
-        
-    </head>
-    <body>
-        <div class="box">
-            <div class="boxPosition">
-                <div class="top"></div>
-                <div class="bottum"></div>
-                    <div>
-                        <span style="--n:0"></span>
-                        <span style="--n:1"></span>
-                        <span style="--n:2"></span>
-                        <span style="--n:3"></span>
-                    </div>
-                    
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lecteur audio</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="background.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="boxPosition">
+            <div class="top"></div>
+            <div class="bottum"></div>
+            <div>
+                <span style="--n:0"></span>
+                <span style="--n:1"></span>
+                <span style="--n:2"></span>
+                <span style="--n:3"></span>
             </div>
-    
-                
-    <h1 class = "neon-buttom2">
-            Lecteur audio 
-        </h1> 
-        <div class="boutoncontrolright">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id ="check.buttom-right">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>
         </div>
-        <div class="boutoncontrolleft">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16" id="check.buttom-left" display = "none">
-                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-            </svg>
-        </div>
-        <h1 id ="check" , class = "neon-buttom1">image</h1>
-        <div class="imagePosition">
-            <img src="cat-space.gif" alt="gif" id ="image">
-            <video muted id="video" display ="none">
-                <source src="Clips_video/Legends Never Die (ft. Against The Current)  Worlds 2017 - League of Legends.mp4" type=video/mp4>
-            </video>
-        </div>
+    </div>
+
+    <h1 class="neon-buttom2">Lecteur audio</h1>
+    <div class="boutoncontrolright">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play"
+            viewBox="0 0 16 16" id="check.buttom-right">
+            <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+    </div>
+    <div class="boutoncontrolleft">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-left"
+            viewBox="0 0 16 16" id="check.buttom-left" style="display:none;">
+            <path fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+        </svg>
+    </div>
+    <h1 id="check" class="neon-buttom1">image</h1>
+    <div class="imagePosition">
+        <img src="cat-space.gif" alt="gif" id="image">
+        <video muted id="video" style="display:none;">
+            <source src="Clips_video/Legends Never Die (ft. Against The Current)  Worlds 2017 - League of Legends.mp4"
+                type="video/mp4">
+        </video>
+    </div>
 
     <div class="barre-audio">
-        <input type="range" id = "track" min = "0" max="track-time" value = "0" step="elapsed">
-        <span id="elapsed">0:00</span> / <span id="track-time"> 1:00</span>
+        <input type="range" id="track" min="0" max="100" value="0" step="1">
+        <span id="elapsed">0:00</span> / <span id="track-time">0:00</span>
     </div>
     <div class="barre-son">
         <input type="range" id="volume" min="0" max="1" value="1" step="0.01">
-    <span id="volume-value">100%</span>
+        <span id="volume-value">100%</span>
     </div>
-        <div class="bouton">
-                <audio id="musique" preload="auto"> 
-                <source src ="musique/Legends Never Die (ft. Against The Current)  Worlds 2017 - League of Legends.mp3" type="audio/mpeg">
-                    Votre navigateur ne supporte pas la balise audio.
-                </audio>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16" id ="play-buttom">
-                    <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
-                </svg>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16" id ="pause-buttom">
-                    <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
-                </svg>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16" id ="stop-buttom">
-                    <path d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
-                </svg> 
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-skip-start" viewBox="0 0 16 16" id="skip-start-buttom" display ="none">
-                    <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L5 8.752V12a.5.5 0 0 1-1 0V4zm7.5.633L5.696 8l5.804 3.367V4.633z"/>
-                </svg>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-skip-end" viewBox="0 0 16 16" id="skip-buttom">
-                    <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.713 3.31 4 3.655 4 4.308v7.384c0 .653.713.998 1.233.696L11.5 8.752V12a.5.5 0 0 0 1 0V4zM5 4.633 10.804 8 5 11.367V4.633z"/>
-                </svg>
-        </div>
-       
-        </main>
-        <script src="konami.js"></script>
-        <script>
-        var easter_egg = new Konami(function() { 
-            
-        });
-        </script>
-    
+    <div class="bouton">
+        <audio id="musique" preload="auto">
+            <source src="" type="audio/mpeg">
+            Votre navigateur ne supporte pas la balise audio.
+        </audio>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play"
+            viewBox="0 0 16 16" id="play-buttom">
+            <path
+                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pause-fill"
+            viewBox="0 0 16 16" id="pause-buttom" style="display:none;">
+            <path
+                d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-stop-fill"
+            viewBox="0 0 16 16" id="stop-buttom" style="display:none;">
+            <path
+                d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-skip-start"
+            viewBox="0 0 16 16" id="skip-start-buttom" style="display:none;">
+            <path
+                d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L5 8.752V12a.5.5 0 0 1-1 0V4zm7.5.633L5.696 8l5.804 3.367V4.633z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-skip-end"
+            viewBox="0 0 16 16" id="skip-buttom">
+            <path
+                d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.713 3.31 4 3.655 4 4.308v7.384c0 .653.713.998 1.233.696L11.5 8.752V12a.5.5 0 0 0 1 0V4zM5 4.633 10.804 8 5 11.367V4.633z" />
+        </svg>
+    </div>
+
     <footer>
     </footer>
 </body>
